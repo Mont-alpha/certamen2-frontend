@@ -1,3 +1,9 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
 @import '../node_modules/bootstrap/dist/css/bootstrap-utilities.min.css';
 @import "../node_modules/primereact/resources/themes/arya-blue/theme.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

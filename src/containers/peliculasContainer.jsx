@@ -21,8 +21,9 @@ function PeliculasContainer() {
         if (entrada.ciudad == null || entrada.ciudad == ''){
             toast.current.show({ severity: 'danger', summary: 'Info', detail: 'Debe escribir una ciudad' });
         }
-        guardarEntradas(entrada)
+        //guardarEntradas(entrada)
         console.log(entrada)
+        //toast.current.show({ severity: 'success', summary: 'Info', detail: 'Entrada guardada' });
         
     } 
     useEffect(

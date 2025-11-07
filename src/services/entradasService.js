@@ -1,8 +1,7 @@
 const key = 'entradas'
 const guardarEntradas = (entrada) => {
     const entradasExistentes = [...obtenerEntradas(),entrada]
-    
-    localStorage.setItem(key,JSON.stringify(entrada));
+    localStorage.setItem(key,JSON.stringify(entradasExistentes));
 }
 
 const obtenerEntradas = () => {

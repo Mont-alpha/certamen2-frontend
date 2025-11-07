@@ -17,7 +17,7 @@ function FormularioCompraEntrada({guardarEntrada}) {
     const [cantidadEntradas,setCantidadEntradas] = useState(0)
     const handleClick = ()=> {
         const entradafinal = [{pelicula,ciudad,dia:diaElegido,tipoPago,cantidad:cantidadEntradas}]    
-        guardarEntrada(entradafinal)
+        //guardarEntrada(entradafinal)
     }
 
   return (
@@ -41,7 +41,7 @@ function FormularioCompraEntrada({guardarEntrada}) {
                 <InputText id='ciudad' value={ciudad} onChange={(e) => setCiudad(e.target.value)} />
             </div>
             <div className="mt-2 flex flex-column">
-                <Dropdown value={pelicula} onChange={(e) => setPelicula(e.value)} options={cartelera} optionLabel="cartelera" className="w-full md:w-14rem" />
+                <ListBox value={pelicula} onChange={(e) => setPelicula(e.value)} options={cartelera} optionLabel="cartelera" className="w-full md:w-14rem" />
             </div>
             <Button className='mt-2' label="Guardar entrada" onClick={handleClick()}/>
     </div>
